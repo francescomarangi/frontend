@@ -19,7 +19,7 @@ const Products = () => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        let url = 'http://localhost:5000/api/v1/products';
+        let url = 'https://backend-z8n1.onrender.com/api/v1/products';
         const queryParams = new URLSearchParams();
         
         
