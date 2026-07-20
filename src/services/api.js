@@ -1,7 +1,7 @@
 //centralizza tutte le chiamate HTTP verso il backend
 
 import axios from 'axios';
-const API_BASE = "https://polizone-backend.onrender.com"; 
+const API_BASE = "https://polizone-backend.onrender.com/api/v1"; 
 
 const api = axios.create({
   baseURL: API_BASE,
