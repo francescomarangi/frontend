@@ -1,0 +1,62 @@
+.navbar-premium {
+  background: rgba(10, 10, 10, 0.7) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  
+  z-index: 1100 !important;
+}
+
+.navbar-toolbar {
+  justify-content: space-between !important;
+  gap: 30px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  filter: brightness(1.1); 
+}
+
+.navbar-search-container {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.navbar-search-field .MuiOutlinedInput-input {
+  padding: 10px 14px !important;
+  font-size: 0.95rem;
+}
+
+.navbar-right-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.App {
+  padding-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .navbar-logo {
+      height: 35px;
+  }
+  
+  .navbar-right-group {
+      gap: 10px;
+  }
+
+  .navbar-auth-btn span {
+      display: none;
+  }
+  .navbar-auth-btn {
+      min-width: auto;
+      padding: 8px !important;
+      border-radius: 50%;
+  }
+}
