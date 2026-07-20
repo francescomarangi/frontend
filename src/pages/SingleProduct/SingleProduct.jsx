@@ -20,7 +20,7 @@ const SingleProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/v1/products/${id}`);
+        const response = await fetch(`https://backend-z8n1.onrender.com/api/v1/products/${id}`);
         if (!response.ok) {
           if (response.status === 404) throw new Error('Prodotto non trovato nel database.');
           throw new Error('Errore di connessione al server.');
@@ -73,7 +73,7 @@ const SingleProduct = () => {
             minHeight: '400px'
           }}>
             <img 
-              src={`http://localhost:5000/${prodotto.image}`} 
+              src={`https://backend-z8n1.onrender.com/${prodotto.image}`} 
               alt={prodotto.name} 
               style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} 
             />

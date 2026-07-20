@@ -36,7 +36,7 @@ const Card = ({ card, onIncrement }) => {
                     borderBottom: '1px solid rgba(255,255,255,0.1)'
                 }}>
                     <img 
-                        src={`http://localhost:5000/${card.image}`} 
+                        src={`https://backend-z8n1.onrender.com/${card.image}`} 
                         alt={card.name} 
                         style={{ 
                             maxHeight: '100%', 

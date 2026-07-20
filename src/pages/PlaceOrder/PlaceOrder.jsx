@@ -60,7 +60,7 @@ const PlaceOrder = () => {
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, flex: 1 }}>
                       {item.image && (
                         <Box sx={{ width: '65px', height: '65px', backgroundColor: '#fff', borderRadius: '12px', p: 0.5, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                           <img src={`http://localhost:5000/${item.image}`} alt={item.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                           <img src={`https://backend-z8n1.onrender.com/${item.image}`} alt={item.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                         </Box>
                       )}
                       <Box>
